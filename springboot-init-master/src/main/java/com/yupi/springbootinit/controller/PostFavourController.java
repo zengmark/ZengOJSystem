@@ -1,18 +1,18 @@
-package com.yupi.zengoj.controller;
+package com.oj.zengoj.controller;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.yupi.zengoj.common.BaseResponse;
-import com.yupi.zengoj.common.ErrorCode;
-import com.yupi.zengoj.common.ResultUtils;
-import com.yupi.zengoj.exception.BusinessException;
-import com.yupi.zengoj.exception.ThrowUtils;
-import com.yupi.zengoj.model.dto.post.PostQueryRequest;
-import com.yupi.zengoj.model.dto.postfavour.PostFavourAddRequest;
-import com.yupi.zengoj.model.dto.postfavour.PostFavourQueryRequest;
-import com.yupi.zengoj.model.entity.User;
-import com.yupi.zengoj.model.vo.PostVO;
-import com.yupi.zengoj.service.PostFavourService;
-import com.yupi.zengoj.service.UserService;
+import com.oj.zengoj.common.BaseResponse;
+import com.oj.zengoj.common.ErrorCode;
+import com.oj.zengoj.common.ResultUtils;
+import com.oj.zengoj.exception.BusinessException;
+import com.oj.zengoj.exception.ThrowUtils;
+import com.oj.zengoj.model.dto.post.PostQueryRequest;
+import com.oj.zengoj.model.dto.postfavour.PostFavourAddRequest;
+import com.oj.zengoj.model.dto.postfavour.PostFavourQueryRequest;
+import com.oj.zengoj.model.entity.User;
+import com.oj.zengoj.model.vo.PostVO;
+import com.oj.zengoj.service.PostFavourService;
+import com.oj.zengoj.service.UserService;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import lombok.extern.slf4j.Slf4j;
@@ -24,8 +24,7 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * 帖子收藏接口
  *
- * @author <a href="https://github.com/liyupi">程序员鱼皮</a>
- * @from <a href="https://yupi.icu">编程导航知识星球</a>
+ 
  */
 @RestController
 @RequestMapping("/post_favour")

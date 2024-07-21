@@ -1,4 +1,4 @@
-package com.yupi.zengoj.mapper;
+package com.oj.zengoj.mapper;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
@@ -12,8 +12,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 /**
  * 帖子收藏数据库操作测试
  *
- * @author <a href="https://github.com/liyupi">程序员鱼皮</a>
- * @from <a href="https://yupi.icu">编程导航知识星球</a>
+ 
  */
 @SpringBootTest
 class PostFavourMapperTest {

@@ -1,7 +1,7 @@
-package com.yupi.zengoj.job.once;
+package com.oj.zengoj.job.once;
 
-import com.yupi.zengoj.esdao.PostEsDao;
-import com.yupi.zengoj.model.dto.post.PostEsDTO;
+import com.oj.zengoj.esdao.PostEsDao;
+import com.oj.zengoj.model.dto.post.PostEsDTO;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -13,8 +13,7 @@ import org.springframework.boot.CommandLineRunner;
 /**
  * 全量同步帖子到 es
  *
- * @author <a href="https://github.com/liyupi">程序员鱼皮</a>
- * @from <a href="https://yupi.icu">编程导航知识星球</a>
+ 
  */
 // todo 取消注释开启任务
 //@Component

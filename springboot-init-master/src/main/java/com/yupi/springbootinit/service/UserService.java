@@ -1,11 +1,11 @@
-package com.yupi.zengoj.service;
+package com.oj.zengoj.service;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.yupi.zengoj.model.dto.user.UserQueryRequest;
-import com.yupi.zengoj.model.entity.User;
-import com.yupi.zengoj.model.vo.LoginUserVO;
-import com.yupi.zengoj.model.vo.UserVO;
+import com.oj.zengoj.model.dto.user.UserQueryRequest;
+import com.oj.zengoj.model.entity.User;
+import com.oj.zengoj.model.vo.LoginUserVO;
+import com.oj.zengoj.model.vo.UserVO;
 import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import me.chanjar.weixin.common.bean.WxOAuth2UserInfo;
@@ -13,8 +13,7 @@ import me.chanjar.weixin.common.bean.WxOAuth2UserInfo;
 /**
  * 用户服务
  *
- * @author <a href="https://github.com/liyupi">程序员鱼皮</a>
- * @from <a href="https://yupi.icu">编程导航知识星球</a>
+
  */
 public interface UserService extends IService<User> {
 

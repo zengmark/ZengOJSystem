@@ -1,22 +1,22 @@
-package com.yupi.zengoj.controller;
+package com.oj.zengoj.controller;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.google.gson.Gson;
-import com.yupi.zengoj.annotation.AuthCheck;
-import com.yupi.zengoj.common.BaseResponse;
-import com.yupi.zengoj.common.DeleteRequest;
-import com.yupi.zengoj.common.ErrorCode;
-import com.yupi.zengoj.common.ResultUtils;
-import com.yupi.zengoj.constant.UserConstant;
-import com.yupi.zengoj.exception.BusinessException;
-import com.yupi.zengoj.exception.ThrowUtils;
-import com.yupi.zengoj.model.dto.post.PostAddRequest;
-import com.yupi.zengoj.model.dto.post.PostEditRequest;
-import com.yupi.zengoj.model.dto.post.PostQueryRequest;
-import com.yupi.zengoj.model.dto.post.PostUpdateRequest;
-import com.yupi.zengoj.model.entity.User;
-import com.yupi.zengoj.model.vo.PostVO;
-import com.yupi.zengoj.service.UserService;
+import com.oj.zengoj.annotation.AuthCheck;
+import com.oj.zengoj.common.BaseResponse;
+import com.oj.zengoj.common.DeleteRequest;
+import com.oj.zengoj.common.ErrorCode;
+import com.oj.zengoj.common.ResultUtils;
+import com.oj.zengoj.constant.UserConstant;
+import com.oj.zengoj.exception.BusinessException;
+import com.oj.zengoj.exception.ThrowUtils;
+import com.oj.zengoj.model.dto.post.PostAddRequest;
+import com.oj.zengoj.model.dto.post.PostEditRequest;
+import com.oj.zengoj.model.dto.post.PostQueryRequest;
+import com.oj.zengoj.model.dto.post.PostUpdateRequest;
+import com.oj.zengoj.model.entity.User;
+import com.oj.zengoj.model.vo.PostVO;
+import com.oj.zengoj.service.UserService;
 import java.util.List;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
@@ -31,8 +31,7 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * 帖子接口
  *
- * @author <a href="https://github.com/liyupi">程序员鱼皮</a>
- * @from <a href="https://yupi.icu">编程导航知识星球</a>
+ 
  */
 @RestController
 @RequestMapping("/post")

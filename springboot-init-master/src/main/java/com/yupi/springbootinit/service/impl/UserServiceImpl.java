@@ -1,21 +1,21 @@
-package com.yupi.zengoj.service.impl;
+package com.oj.zengoj.service.impl;
 
-import static com.yupi.zengoj.constant.UserConstant.USER_LOGIN_STATE;
+import static com.oj.zengoj.constant.UserConstant.USER_LOGIN_STATE;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.toolkit.CollectionUtils;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.yupi.zengoj.common.ErrorCode;
-import com.yupi.zengoj.constant.CommonConstant;
-import com.yupi.zengoj.exception.BusinessException;
-import com.yupi.zengoj.mapper.UserMapper;
-import com.yupi.zengoj.model.dto.user.UserQueryRequest;
-import com.yupi.zengoj.model.entity.User;
-import com.yupi.zengoj.model.enums.UserRoleEnum;
-import com.yupi.zengoj.model.vo.LoginUserVO;
-import com.yupi.zengoj.model.vo.UserVO;
-import com.yupi.zengoj.service.UserService;
-import com.yupi.zengoj.utils.SqlUtils;
+import com.oj.zengoj.common.ErrorCode;
+import com.oj.zengoj.constant.CommonConstant;
+import com.oj.zengoj.exception.BusinessException;
+import com.oj.zengoj.mapper.UserMapper;
+import com.oj.zengoj.model.dto.user.UserQueryRequest;
+import com.oj.zengoj.model.entity.User;
+import com.oj.zengoj.model.enums.UserRoleEnum;
+import com.oj.zengoj.model.vo.LoginUserVO;
+import com.oj.zengoj.model.vo.UserVO;
+import com.oj.zengoj.service.UserService;
+import com.oj.zengoj.utils.SqlUtils;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -30,8 +30,7 @@ import org.springframework.util.DigestUtils;
 /**
  * 用户服务实现
  *
- * @author <a href="https://github.com/liyupi">程序员鱼皮</a>
- * @from <a href="https://yupi.icu">编程导航知识星球</a>
+
  */
 @Service
 @Slf4j
@@ -40,7 +39,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
     /**
      * 盐值，混淆密码
      */
-    private static final String SALT = "yupi";
+    private static final String SALT = "oj";
 
     @Override
     public long userRegister(String userAccount, String userPassword, String checkPassword) {

@@ -1,14 +1,13 @@
-package com.yupi.zengoj.esdao;
+package com.oj.zengoj.esdao;
 
-import com.yupi.zengoj.model.dto.post.PostEsDTO;
+import com.oj.zengoj.model.dto.post.PostEsDTO;
 import java.util.List;
 import org.springframework.data.elasticsearch.repository.ElasticsearchRepository;
 
 /**
  * 帖子 ES 操作
  *
- * @author <a href="https://github.com/liyupi">程序员鱼皮</a>
- * @from <a href="https://yupi.icu">编程导航知识星球</a>
+ 
  */
 public interface PostEsDao extends ElasticsearchRepository<PostEsDTO, Long> {
 

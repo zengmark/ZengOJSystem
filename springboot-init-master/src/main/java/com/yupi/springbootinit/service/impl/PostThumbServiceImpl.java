@@ -1,13 +1,13 @@
-package com.yupi.zengoj.service.impl;
+package com.oj.zengoj.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.yupi.zengoj.common.ErrorCode;
-import com.yupi.zengoj.exception.BusinessException;
-import com.yupi.zengoj.mapper.PostThumbMapper;
-import com.yupi.zengoj.model.entity.PostThumb;
-import com.yupi.zengoj.model.entity.User;
-import com.yupi.zengoj.service.PostThumbService;
+import com.oj.zengoj.common.ErrorCode;
+import com.oj.zengoj.exception.BusinessException;
+import com.oj.zengoj.mapper.PostThumbMapper;
+import com.oj.zengoj.model.entity.PostThumb;
+import com.oj.zengoj.model.entity.User;
+import com.oj.zengoj.service.PostThumbService;
 import javax.annotation.Resource;
 import org.springframework.aop.framework.AopContext;
 import org.springframework.stereotype.Service;
@@ -16,8 +16,7 @@ import org.springframework.transaction.annotation.Transactional;
 /**
  * 帖子点赞服务实现
  *
- * @author <a href="https://github.com/liyupi">程序员鱼皮</a>
- * @from <a href="https://yupi.icu">编程导航知识星球</a>
+ 
  */
 @Service
 public class PostThumbServiceImpl extends ServiceImpl<PostThumbMapper, PostThumb>

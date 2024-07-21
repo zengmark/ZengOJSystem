@@ -1,16 +1,16 @@
-package com.yupi.zengoj.controller;
+package com.oj.zengoj.controller;
 
 import cn.hutool.core.io.FileUtil;
-import com.yupi.zengoj.common.BaseResponse;
-import com.yupi.zengoj.common.ErrorCode;
-import com.yupi.zengoj.common.ResultUtils;
-import com.yupi.zengoj.constant.FileConstant;
-import com.yupi.zengoj.exception.BusinessException;
-import com.yupi.zengoj.manager.CosManager;
-import com.yupi.zengoj.model.dto.file.UploadFileRequest;
-import com.yupi.zengoj.model.entity.User;
-import com.yupi.zengoj.model.enums.FileUploadBizEnum;
-import com.yupi.zengoj.service.UserService;
+import com.oj.zengoj.common.BaseResponse;
+import com.oj.zengoj.common.ErrorCode;
+import com.oj.zengoj.common.ResultUtils;
+import com.oj.zengoj.constant.FileConstant;
+import com.oj.zengoj.exception.BusinessException;
+import com.oj.zengoj.manager.CosManager;
+import com.oj.zengoj.model.dto.file.UploadFileRequest;
+import com.oj.zengoj.model.entity.User;
+import com.oj.zengoj.model.enums.FileUploadBizEnum;
+import com.oj.zengoj.service.UserService;
 import java.io.File;
 import java.util.Arrays;
 import javax.annotation.Resource;
@@ -26,8 +26,7 @@ import org.springframework.web.multipart.MultipartFile;
 /**
  * 文件接口
  *
- * @author <a href="https://github.com/liyupi">程序员鱼皮</a>
- * @from <a href="https://yupi.icu">编程导航知识星球</a>
+
  */
 @RestController
 @RequestMapping("/file")

@@ -1,24 +1,24 @@
-package com.yupi.zengoj.service.impl;
+package com.oj.zengoj.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.google.gson.Gson;
-import com.yupi.zengoj.common.ErrorCode;
-import com.yupi.zengoj.constant.CommonConstant;
-import com.yupi.zengoj.exception.BusinessException;
-import com.yupi.zengoj.exception.ThrowUtils;
-import com.yupi.zengoj.mapper.PostFavourMapper;
-import com.yupi.zengoj.mapper.PostThumbMapper;
-import com.yupi.zengoj.model.dto.post.PostEsDTO;
-import com.yupi.zengoj.model.dto.post.PostQueryRequest;
-import com.yupi.zengoj.model.entity.PostFavour;
-import com.yupi.zengoj.model.entity.PostThumb;
-import com.yupi.zengoj.model.entity.User;
-import com.yupi.zengoj.model.vo.PostVO;
-import com.yupi.zengoj.model.vo.UserVO;
-import com.yupi.zengoj.service.UserService;
-import com.yupi.zengoj.utils.SqlUtils;
+import com.oj.zengoj.common.ErrorCode;
+import com.oj.zengoj.constant.CommonConstant;
+import com.oj.zengoj.exception.BusinessException;
+import com.oj.zengoj.exception.ThrowUtils;
+import com.oj.zengoj.mapper.PostFavourMapper;
+import com.oj.zengoj.mapper.PostThumbMapper;
+import com.oj.zengoj.model.dto.post.PostEsDTO;
+import com.oj.zengoj.model.dto.post.PostQueryRequest;
+import com.oj.zengoj.model.entity.PostFavour;
+import com.oj.zengoj.model.entity.PostThumb;
+import com.oj.zengoj.model.entity.User;
+import com.oj.zengoj.model.vo.PostVO;
+import com.oj.zengoj.model.vo.UserVO;
+import com.oj.zengoj.service.UserService;
+import com.oj.zengoj.utils.SqlUtils;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -47,8 +47,7 @@ import org.springframework.stereotype.Service;
 /**
  * 帖子服务实现
  *
- * @author <a href="https://github.com/liyupi">程序员鱼皮</a>
- * @from <a href="https://yupi.icu">编程导航知识星球</a>
+ 
  */
 @Service
 @Slf4j
@@ -195,7 +194,7 @@ public class PostServiceImpl extends ServiceImpl<PostMapper, Post> implements Po
             sortBuilder = SortBuilders.fieldSort(sortField);
             sortBuilder.order(CommonConstant.SORT_ORDER_ASC.equals(sortOrder) ? SortOrder.ASC : SortOrder.DESC);
         }
-        // 分页
+        // com.oj.zengoj
         PageRequest pageRequest = PageRequest.of((int) current, (int) pageSize);
         // 构造查询
         NativeSearchQuery searchQuery = new NativeSearchQueryBuilder().withQuery(boolQueryBuilder)

@@ -1,17 +1,16 @@
-package com.yupi.zengoj.service;
+package com.oj.zengoj.service;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.yupi.zengoj.model.dto.post.PostQueryRequest;
-import com.yupi.zengoj.model.vo.PostVO;
+import com.oj.zengoj.model.dto.post.PostQueryRequest;
+import com.oj.zengoj.model.vo.PostVO;
 import javax.servlet.http.HttpServletRequest;
 
 /**
  * 帖子服务
  *
- * @author <a href="https://github.com/liyupi">程序员鱼皮</a>
- * @from <a href="https://yupi.icu">编程导航知识星球</a>
+
  */
 public interface PostService extends IService<Post> {
 
